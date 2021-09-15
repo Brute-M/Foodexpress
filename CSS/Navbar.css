@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Karantina:wght@300&display=swap');
+
+/* font-family: 'Karantina', cursive; */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: saturate(180%) blur(5px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.nav-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 5rem;
+    width: 6rem;
+}
+
+.nav-logo img {
+    height: 100%;
+    width: 100%;
+    filter: brightness(355%);
+}
+
+.nav-items ul li {
+    display: inline-block;
+    font-size: 150%;
+    padding: 0 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+.nav-items ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.nav-text {
+    font-size: 200%;
+    font-weight: 600;
+    color: var(--text-color);
+}

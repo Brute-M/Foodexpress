@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.heading {
+    font-size: 300%;
+    color: var(--tomato);
+    font-weight: 600;
+}
+
+
+/* Top Section */
+
+.top-section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.top-section::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image: url(../Images/bg-1.jpeg);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-heading {
+    font-size: 470%;
+    padding: 1rem 1rem;
+    color: var(--text-color);
+}
+
+.top-sub-heading {
+    font-size: 120%;
+    width: 80%;
+    margin: auto;
+    color: var(--white);
+}
+
+.order-now-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.order-now-btn button {
+    padding: 0.2rem 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 1px;
+    font-size: 100%;
+}
+
+
+/* TOP SECTION END*/
+
+
+/* SVC SECTION STARTS FROM HERE */
+
+.svc-section {
+    background-color: #f2efe3;
+}
+
+.svcs {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.svc-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 1rem;
+}
+
+.svc-card-img {
+    object-fit: contain;
+}
+
+.svc-card-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.svc-card-heading {
+    font-size: 120%;
+}
+
+.svc-card-text {
+    font-size: 100%;
+}
+
+
+/* SVC SECTION ENDS */
+
+
+/* Clients SECTION STARTS  */
+
+.clts-sec {
+    position: relative;
+}
+
+.clts-sec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-image: url(../Images/bg-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-img {
+    text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.client-img:hover {
+    transform: scale(1.1);
+}
+
+.client-img img {
+    text-align: center;
+    width: 70%;
+}
+
+
+/* Clients SECTION ENDS HERE  */
+
+
+/* Contact Section START HERE */
+
+.contact-sec {
+    position: relative;
+}
+
+.contact-sec::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(../Images/bg-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+}
+
+.user-input {
+    position: relative;
+}
+
+.user-input label {
+    width: 100%;
+    font-size: 150%;
+    color: #bb3838;
+}
+
+.user-input input {
+    width: 100%;
+    padding: .2 rem .2rem;
+    font-size: 80%;
+    letter-spacing: 1px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000;
+    outline: none;
+    font-size: 120%;
+}
+
+.bottom-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #bb3838;
+    height: 3px;
+    transition: 0.5s;
+}
+
+.contact-btn {
+    width: 100%;
+}
+
+.contact-btn button {
+    width: 100%;
+    background-color: #bb3838;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0.3rem 0;
+}
+
+
+/* Contact Section ENDS HERE */
