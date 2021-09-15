@@ -41,7 +41,17 @@ nav {
 
 .nav-items ul li a {
     text-decoration: none;
-    color: var(--text-color)
+    position: relative;
+    color: #dfc14a70;
+}
+
+.nav-items ul li a span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: green;
 }
 
 .nav-items ul {
@@ -53,4 +63,26 @@ nav {
     font-size: 200%;
     font-weight: 600;
     color: var(--text-color);
+}
+
+
+@media only screen and (max-width: 460px) {
+    .nav-items ul li{
+        font-size: 100%;
+        padding: 0 1rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 280px) {
+    .nav-items ul li{
+        font-size: 100%;
+        padding: 0 0.5rem;
+    }
+
+    .top-section .container{
+        margin-top: 5rem;
+    }
+
 }

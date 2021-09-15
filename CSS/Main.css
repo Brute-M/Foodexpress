@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
   display: none;
-} */
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 .heading {
   font-size: 300%;
@@ -227,24 +231,44 @@ form {
     color: var(--text-color);
   }
   .svcs {
-      align-items: center   ;
+    align-items: center;
     flex-direction: column;
   }
 
   .svc-card-img img {
     width: 50%;
   }
-  form{
-      width: 70%;
+  form {
+    width: 70%;
   }
 }
 
 @media only screen and (max-width: 702px) {
-    nav{
-        flex-direction: column;
-        padding-bottom: 1rem;
-    }
-    .top-section .container{
-        margin-top: 7rem;
-    }
+  nav {
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+  .top-section .container {
+    margin-top: 7rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .user-input label {
+    font-size: 100%;
+  }
+  .user-input input {
+    font-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .top-section .top-heading {
+    font-size: 220%;
+  }
+
+  .top-sub-heading {
+    font-size: 100%;
+    width: 100%;
+  }
 }

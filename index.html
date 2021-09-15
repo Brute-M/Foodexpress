@@ -41,10 +41,10 @@
         <div class="nav-right">
             <div class="nav-items">
                 <ul>
-                    <li><a href="#home">HOME</a></li>
-                    <li><a href="#service-container">SERVICES</a></li>
-                    <li><a href="#clients-container">CLIENTS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a name="hrefs" href="#home"">HOME <span></span></a></li>
+                    <li><a name="hrefs" href="#services">SERVICES <span></span></a></li>
+                    <li><a name="hrefs" href="#clients">CLIENTS <span></span></a></li>
+                    <li><a name="hrefs" href="#contact">CONTACT <span></span></a></li>
                 </ul>
             </div>
         </div>
@@ -52,7 +52,7 @@
     <!-- Nav ends here -->
 
     <!-- First section -->
-    <section class="top-section">
+    <section class="top-section" id="home">
         <div class="container">
             <div class="top-heading text-center">
                 Welcome to Food Express
@@ -66,7 +66,7 @@
     <!-- First section ends here-->
 
     <!-- Services section -->
-    <section class="svc-section pb-5">
+    <section class="svc-section pb-5" id="services">
         <div class="heading text-center py-3">
             Our Services
         </div>
@@ -109,7 +109,7 @@
     <!-- Services section Ends here-->
 
     <!--Clients section -->
-    <section class="clts-sec pb-5">
+    <section class="clts-sec pb-5" id="clients">
         <div class="heading text-center py-4">Our clients</div>
         <div class="container clients">
             <div class="client-img">
@@ -130,7 +130,7 @@
     <!--Clients section ends here-->
 
     <!--Contact section start here  -->
-    <section class="contact-sec pb-5">
+    <section class="contact-sec pb-5" id="contact">
         <div class="text-center py-4 heading">Contact us</div>
         <div class="container">
             <form>
@@ -187,6 +187,11 @@
             console.log("Focus");
             element.parentElement.children[element.parentElement.children.length - 1].style.width = "0%"
         })
+    })
+
+    activeByDefault = "home"
+    document.querySelectorAll("a[name='hrefs']").forEach(e => {
+        
     })
 </script>
 
